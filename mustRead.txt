@@ -1,0 +1,1 @@
+in the given api -> the image url was not working properly , so I added default image for each card 

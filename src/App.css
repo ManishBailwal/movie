@@ -1,38 +1,77 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+ 
+}
+
+h1{
+  text-align: center;
+  padding-bottom:10px;
+  color:white;
+  background-color:rgb(52, 50, 50);
+  
+}
+
+.main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  background-color: rgb(52, 50, 50);
+  
+}
+.movieContainer{
+  border:2px solid;
+  width:250px;
+  height:320px;
+  display:flex;
+  flex-direction:column;
+  background-color: rgb(85, 132, 141);
+
+  border-radius: 16px;
+  margin:8px;
+}
+.movieContainer img{
+  width:248px;
+  height:200px;
+  border-radius: 16px;
+
+}
+
+.movieName{
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+ 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rating{
+  color:blue;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.btn{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn button{
+  width:100px;
+  height:20px;
+  margin-inline: auto;
+  margin-top: 4px;
+  border-radius: 4px;
+  border:none;
+  color:blue;
+  cursor:pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active{
+  background-color:greenyellow;
+  color:red;
 }
